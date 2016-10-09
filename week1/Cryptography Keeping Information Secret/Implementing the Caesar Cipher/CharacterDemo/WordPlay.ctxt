@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=ch
+comment0.target=boolean\ isVowel(char)
+comment0.text=\r\n\ This\ method\ returns\ true\ if\ ch\ is\ a\ vowel\ (one\ of\ 'a',\ 'e',\ 'i',\ 'o',\ or\ 'u'\ or\ the\ uppercase\ versions)\ and\ false\ otherwise\r\n\r\n\ @param\ ch\ a\ vowel\r\n\ @return\ true\ or\ false\r\n
+comment1.params=
+comment1.target=void\ testerIsVowel()
+comment1.text=\r\n\ <em>\ tester\ method\ for\ isVovel\ method.\ </em>\r\n\r\n
+comment2.params=str
+comment2.target=void\ print(java.lang.String)
+comment2.text=\r\n\ prints\ out\ strings\ to\ the\ system\r\n\r\n\ @param\ str\ input\ string\r\n
+numComments=3
