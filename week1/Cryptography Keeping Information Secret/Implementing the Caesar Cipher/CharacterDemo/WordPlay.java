@@ -1,13 +1,52 @@
 
 /**
- * Write a description of WordPlay here.
+ * a program to transform words from a file into another form, such as replacing vowels with an asterix..
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Murat Aka) 
+ * @version (09/10/2016 Version 0.0.1)
  */
 public class WordPlay {
 
     
+    
+    /**
+     * Method replaceVowels replaces all the vowels (uppercase or lowercase) with a character.
+     *
+     * @param phrase string to be replaced
+     * @param ch character to replace with
+     * @return replaced string
+     */
+    public String replaceVowels(String phrase, char ch){
+        StringBuilder sb = new StringBuilder(phrase);
+      
+        for(int i=0;i<phrase.length();i++){
+            char c = phrase.charAt(i);
+            
+            WordPlay obj1 = new WordPlay();
+            
+            Boolean b = obj1.isVowel(c);
+            if(b){
+
+                sb.setCharAt(i, '*');
+            }
+        }
+        
+        return sb.toString();
+    }
+    
+    
+    /**
+     * Method testReplaceVowels tests if replaceVovels method works
+     *
+     */
+    public void testReplaceVowels(){
+        
+        String s = "Hello World";
+        print(s);
+        WordPlay obj1 = new WordPlay();
+        s = obj1.replaceVowels(s, '*');
+        print(s);
+    }
     
     /**
      * This method returns true if ch is a vowel (one of 'a', 'e', 'i', 'o', or 'u' or the uppercase versions) and false otherwise
