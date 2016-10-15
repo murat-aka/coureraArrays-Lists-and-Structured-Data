@@ -18,9 +18,11 @@ public class CaesarBreaker {
         CaesarCipher cc = new CaesarCipher();
         int[] freqs = countLetters(encrypted);
         int maxDex = maxIndex(freqs);
-        System.out.println(maxDex);
+        //         for(int k=0; k<freqs.length; k++){
+        //             System.out.println(freqs[k]);
+        //         } 
         int dkey = maxDex - 4;
-        
+        System.out.println(maxDex);
         if (maxDex < 4) {
             dkey = 26 - (4-maxDex);
         }
@@ -38,13 +40,13 @@ public class CaesarBreaker {
         
         String m;
         
-        m = "CFOPQ IBDFLK XQQXZH BXPQ CIXKH!bbbb";//"FIRST LEGION ATTACK EAST FLANK!"
+        m = "CFOPQ IBDFLK XQQXZH BXPQ CIXKH!BBBBBB";//"FIRST LEGION ATTACK EAST FLANK!"
         m = decrypt(m);
         
         System.out.println(m);
         
           //"At noon be in the conference room with your hat on for a surprise party. YELL LOUD!";
-        m = "Pi cddc qt xc iwt rdcutgtcrt gddb lxiw ndjg wpi dc udg p hjgegxht epgin. NTAA ADJS!";
+        m = "Pi cddc qt xc iwt rdcutgtcrt gddb lxiw ndjg wpi dc udg p hjgegxht epgin. NTAA ADJS!ttttt";
         m = decrypt(m);
         
         System.out.println(m);
@@ -86,21 +88,49 @@ public class CaesarBreaker {
     public int maxIndex(int[] counts){
         
         int max = 0;
+        int j = 0;
         
         for(int i=0; i<counts.length; i++){
             
-            if(counts[i]>max)max=counts[i];
+            if(counts[i]>max){
+                max=counts[i];
+                j = i;
+            }
         }
         
-        return max;
+        return j;
     }
     
     
+    /**
+     * return a String that is every other character from message starting with the start position.
+     * For example, the call halfOfString(“Qbkm Zgis”, 0) 
+     * returns the String “Qk gs” 
+     * and the call halfOfString(“Qbkm Zgis”, 1) 
+     * returns the String “bmZi”.
+     *
+     * @param message 
+     * @param start index the halving starts
+     * @return halved string
+     */
+    public String halfOfString(String message, int start){
+        
+            String half="";
+            
+            for(int i=start;i<message.length(); i+=2){
+                half += message.charAt(i);
+            }
+            
+            return half;
+    }
     
     
-    
-    
-    
-    
+    public void testHalfOfString(){
+        
+        String  m = halfOfString("Qbkm Zgis", 0); //“Qk gs”
+        System.out.println(m);
+        m = halfOfString("Qbkm Zgis", 1);
+        System.out.println(m);//bmZi
+    }
     
 }

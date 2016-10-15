@@ -86,12 +86,17 @@ public class WordLengths {
     public int indexOfMax(int[] values){
     
         int max =0;
+        int j = 0;
         for(int k=0; k < values.length; k++){
 
-			if(values[k]>max)max=k;
+			if(values[k]>max){
+			    
+			    max=values[k];
+			    j=k;
+			}
 		}
         
-		return max;
+		return j;
     }
    
 }
