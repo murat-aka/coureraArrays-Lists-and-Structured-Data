@@ -9,13 +9,77 @@ public class WordPlay {
 
     
     
+    
+    
+    
+    /**
+     * Method emphasize
+     * 
+     * return a String that is the string phrase but with the Char ch (upper- or lowercase) replaced by
+     * ‘*’ if it is in an odd number location in the string (e.g. the first character has an odd number location but an even index, it is at index 0), or
+     * ‘+’ if it is in an even number location in the string (e.g. the second character has an even number location but an odd index, it is at index 1).
+     * For example, the call emphasize(“dna ctgaaactga”, ‘a’) would return the string “dn* ctg+*+ctg+”,
+     * and the call emphasize(“Mary Bella Abracadabra”, ‘a’) would return the string “M+ry Bell+ +br*c*d*br+”. 
+     *
+     * @param phrase A parameter
+     * @param ch A parameter
+     * @return The return value
+     */
+    
+    
+    public String emphasize(String phrase,char ch){
+        
+        StringBuilder sb = new StringBuilder(phrase);
+        ch = Character.toLowerCase(ch);
+        
+        for(int i=0;i<phrase.length();i++){
+            
+            char c = phrase.charAt(i);
+                 c = Character.toLowerCase(c);
+            
+            if(c == ch){
+                
+                if((i%2)==0){
+                   // even
+                   sb.setCharAt(i, '*');
+                }else{
+                   // odd
+                   sb.setCharAt(i, '+');
+                }
+            }
+
+        }
+        
+        return sb.toString();    
+        
+        
+    }
+    
+    
+    /**
+     * Method testEmphasize
+     *
+     */
+    public void testEmphasize(){
+        
+        WordPlay obj1 = new WordPlay();
+        String s = obj1.emphasize("dna ctgaaactga", 'a');// “dn* ctg+*+ctg+”
+        print(s);
+        s = obj1.emphasize("Mary Bella Abracadabra", 'a');// “M+ry Bell+ +br*c*d*br+”
+        print(s);
+        
+    }
+    
+    
+    
+    
     /**
      * Method replaceVowels replaces all the vowels (uppercase or lowercase) with a character.
      *
      * @param phrase string to be replaced
      * @param ch character to replace with
      * @return replaced string
-     */
+     */ 
     public String replaceVowels(String phrase, char ch){
         StringBuilder sb = new StringBuilder(phrase);
       
