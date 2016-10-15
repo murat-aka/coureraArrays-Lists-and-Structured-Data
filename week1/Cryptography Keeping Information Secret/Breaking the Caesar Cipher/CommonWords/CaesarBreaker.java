@@ -51,6 +51,15 @@ public class CaesarBreaker {
         
         System.out.println(m);
         
+        m = "Akag tjw Xibhr awoa aoee xakex znxag xwko";
+        m = decryptTwoKeys(m);
+        System.out.println(m);
+        FileResource resource = new FileResource();
+        
+        m = decryptTwoKeys(resource.asString());
+        
+        System.out.println(m);
+        
     }
     
     
@@ -159,5 +168,43 @@ public class CaesarBreaker {
         
         return dkey;
         
+    }
+    
+    
+    /**
+     * determine the two keys used to encrypt the message,
+     * prints the two keys, and then returns the decrypted String with those two keys.
+     *
+     * @param encrypted A parameter
+     * @return The return value
+     */
+    public String decryptTwoKeys(String encrypted){
+        
+        //Calculate a String of every other character starting with the first character
+        //of the encrypted String by calling halfOfString.
+        
+        String  m1 = halfOfString(encrypted, 0);
+
+        //Calculate a String of every other character starting 
+        //with the second character of the encrypted String.
+        
+        String  m2 = halfOfString(encrypted, 1);
+
+        //Then calculate the key used to encrypt each half String.
+        
+        int k1 = getKey(m1);
+        int k2 = getKey(m2);
+
+        // print the two keys found.
+        
+        System.out.println("k1: "+k1 + " k2: " + k2);
+        
+        
+
+        // Calculate and return the decrypted String using the encryptTwoKeys method 
+        CaesarCipher cc = new CaesarCipher();
+        
+        return cc.encryptTwoKeys(encrypted, 26-k1, 26-k2);
+
     }
 }

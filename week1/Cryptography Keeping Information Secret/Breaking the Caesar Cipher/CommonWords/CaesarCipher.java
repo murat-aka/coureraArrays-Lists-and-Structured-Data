@@ -84,6 +84,11 @@ public class CaesarCipher {
         m = encryptTwoKeys(n, 8, 21); // Io iwjv jz dv bcm kjvammmikz mwju edbc twpz pvb wi awm v ncmxmqnm xvzog. TMGT TJCY!
         System.out.println(m);
         
+        
+         n = "Top ncmy qkff vi vguv vbg ycpx";
+         m = encryptTwoKeys(n, 26-2, 26-20);
+         System.out.println(m);
+        
         //         FileResource fr = new FileResource();
         //         String message = fr.asString();
         //         String encrypted = encrypt(message, key);
