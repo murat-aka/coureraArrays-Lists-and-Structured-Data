@@ -30,8 +30,7 @@ public class WordPlay {
     public String emphasize(String phrase,char ch){
         
         StringBuilder sb = new StringBuilder(phrase);
-        ch = Character.toLowerCase(ch);
-        
+        ch = ch = Character.toLowerCase(ch);
         for(int i=0;i<phrase.length();i++){
             
             char c = phrase.charAt(i);
