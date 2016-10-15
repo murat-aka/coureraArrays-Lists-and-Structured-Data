@@ -73,6 +73,14 @@ public class CaesarCipher {
         m = encryptTwoKeys("First Legion", 23, 17); // “Czojq Ivdzle”
         System.out.println(m);
         
+        
+        String n = "At noon be in the conference room with your hat on for a surprise party. YELL LOUD!";
+        m = encrypt(n,15); // Pi cddc qt xc iwt rdcutgtcrt gddb lxiw ndjg wpi dc udg p hjgegxht epgin. NTAA ADJS!
+        System.out.println(m);
+        
+        m = encryptTwoKeys(n, 8, 21); // Io iwjv jz dv bcm kjvammmikz mwju edbc twpz pvb wi awm v ncmxmqnm xvzog. TMGT TJCY!
+        System.out.println(m);
+        
         //         FileResource fr = new FileResource();
         //         String message = fr.asString();
         //         String encrypted = encrypt(message, key);

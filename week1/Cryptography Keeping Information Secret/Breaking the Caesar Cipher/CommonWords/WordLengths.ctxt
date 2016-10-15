@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=resource\ counts
+comment0.target=int[]\ countWordLength(edu.duke.FileResource,\ int[])
+comment0.text=\r\n\ This\ method\ read\ in\ the\ words\ from\ resource\ and\ count\ the\ number\ of\ words\ \r\n\ of\ each\ length\ for\ all\ the\ words\ in\ resource,\ storing\ these\ counts\ in\ the\ array\ counts.\r\n\r\n\ @param\ resource\ file\ resource.\r\n\ @param\ counts\ array\ of\ words\ with\ index\ as\ the\ word\ length.\ \r\n\ @return\ counts\ array\ after\ counting.\r\n
+comment1.params=
+comment1.target=void\ testCountWordLengths()
+comment1.text=\r\n\ Method\ testCountWordLengths\r\n\r\n
+numComments=2
