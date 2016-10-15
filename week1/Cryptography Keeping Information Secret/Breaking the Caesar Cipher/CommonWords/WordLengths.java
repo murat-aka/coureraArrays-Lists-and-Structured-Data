@@ -23,10 +23,10 @@ public class WordLengths {
 			
            
 			int n = word.length();
-			System.out.println(n);
+			//System.out.println(n);
 			char first = word.charAt(0);
 			char last = word.charAt(n-1);
-			System.out.println(word);
+			//System.out.println(word);
 			Boolean b = Character.isLetter(first);
 			if(b){
 			 }else{
@@ -34,7 +34,7 @@ public class WordLengths {
 			     word = word.substring(1, n);
 			     n = word.length();
 			 }
-			System.out.println(word);
+			//System.out.println(word);
 			b = Character.isLetter(last);
 			
 			if(b){
@@ -42,7 +42,7 @@ public class WordLengths {
 			     word = word.substring(0,n-1);
 			     n = word.length();
 			 }
-			System.out.println(word);
+			//System.out.println(word);
 			
 			if(n>30){
 			    counts[30] = counts[30] += 1;
@@ -71,5 +71,27 @@ public class WordLengths {
 
 			System.out.println( counts[k] + " words of length " +k );
 		}
+		
+		int m = indexOfMax(counts);
+		
+		System.out.println("max occurence: " + m);
     }
+    
+    /**
+     * determine the most common word length in the file.
+     *
+     * @param values array of counts
+     * @return index of array with max count.
+     */
+    public int indexOfMax(int[] values){
+    
+        int max =0;
+        for(int k=0; k < values.length; k++){
+
+			if(values[k]>max)max=k;
+		}
+        
+		return max;
+    }
+   
 }
