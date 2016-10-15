@@ -125,6 +125,10 @@ public class CaesarBreaker {
     }
     
     
+    /**
+     * Method testHalfOfString
+     *
+     */
     public void testHalfOfString(){
         
         String  m = halfOfString("Qbkm Zgis", 0); //“Qk gs”
@@ -133,4 +137,27 @@ public class CaesarBreaker {
         System.out.println(m);//bmZi
     }
     
+    
+    /**
+     * determines the key from the location of the encrypted letter ‘e’, 
+     *
+     * @param s encrypted message
+     * @return key for encryption
+     */
+    public int getKey(String s){
+        
+        
+        int[] freqs = countLetters(s);
+        int maxDex = maxIndex(freqs);
+        
+        int dkey = maxDex - 4;
+        System.out.println(maxDex);
+        if (maxDex < 4) {
+            dkey = 26 - (4-maxDex);
+        }
+        
+        
+        return dkey;
+        
+    }
 }
