@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=key1\ key2
+comment0.target=CaesarCipherTwo(int,\ int)
+comment0.text=\r\n\ CaesarCipherTwo\ Constructor\r\n\r\n\ @param\ key1\ encryption\ key1\r\n\ @param\ key2\ encryption\ key2\r\n
+comment1.params=
+comment1.target=void\ testDecrypt()
+comment1.text=\r\n\ Method\ testDecrypt\r\n\r\n
+comment2.params=encrypted
+comment2.target=java.lang.String\ decryptTwoKeys(java.lang.String)
+comment2.text=\r\n\ returns\ the\ decrypted\ String\ with\ two\ keys.\r\n\r\n\ @param\ encrypted\ message\r\n\ @return\ decrypted\ message\r\n
+comment3.params=input
+comment3.target=java.lang.String\ encryptTwoKeys(java.lang.String)
+comment3.text=\r\n\ Method\ encryptTwoKeys\ returns\ a\ String\ that\ has\ been\ encrypted\ using\ the\ following\ algorithm.\r\n\ Parameter\ key1\ is\ used\ to\ encrypt\ every\ other\ character\ with\ the\ Caesar\ Cipher\ algorithm,\ \r\n\ starting\ with\ the\ first\ character,\ and\ key2\ is\ used\ to\ encrypt\ every\ other\ character,\r\n\ starting\ with\ the\ second\ character.\ \r\n\ For\ example,\ the\ call\ encryptTwoKeys(\u201CFirst\ Legion\u201D,\ 23,\ 17)\ should\ return\ \u201CCzojq\ Ivdzle\u201D.\ \r\n\ Note\ the\ \u2018F\u2019\ is\ encrypted\ with\ key\ 23,\r\n\ the\ first\ \u2018i\u2019\ with\ 17,\ the\ \u2018r\u2019\ with\ 23,\r\n\ and\ the\ \u2018s\u2019\ with\ 17,\ etc.\r\n\r\n\ @param\ input\ the\ message\r\n\ @return\ the\ encrypted\ message\r\n
+numComments=4

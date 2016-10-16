@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ simpleTests()
+comment0.text=\r\n\ Method\ simpleTests\r\n\r\n
+comment1.params=encrypted
+comment1.target=int[]\ countLetters(java.lang.String)
+comment1.text=\r\n\ returns\ the\ occurence\ of\ each\ letter\ in\ the\ encrypted\ message.\r\n\r\n\ @param\ encrypted\ message\r\n\ @return\ array\ of\ character\ counts\r\n
+comment2.params=counts
+comment2.target=int\ maxIndex(int[])
+comment2.text=\r\n\ returns\ the\ index\ of\ max\ occured\ character\r\n\r\n\ @param\ counts\ array\ of\ character\ counts.\r\n\ @return\ index\ of\ character\ with\ highest\ occurence.\r\n
+comment3.params=message\ start
+comment3.target=java.lang.String\ halfOfString(java.lang.String,\ int)
+comment3.text=\r\n\ return\ a\ String\ that\ is\ every\ other\ character\ from\ message\ starting\ with\ the\ start\ position.\r\n\ For\ example,\ the\ call\ halfOfString(\u201CQbkm\ Zgis\u201D,\ 0)\ \r\n\ returns\ the\ String\ \u201CQk\ gs\u201D\ \r\n\ and\ the\ call\ halfOfString(\u201CQbkm\ Zgis\u201D,\ 1)\ \r\n\ returns\ the\ String\ \u201CbmZi\u201D.\r\n\r\n\ @param\ message\ the\ encrypted\ message\ \r\n\ @param\ start\ the\ index\ halving\ starts\ at\r\n\ @return\ halved\ string\r\n
+comment4.params=
+comment4.target=void\ testHalfOfString()
+comment4.text=\r\n\ Method\ testHalfOfString\r\n\r\n
+comment5.params=s
+comment5.target=int\ getKey(java.lang.String)
+comment5.text=\r\n\ determines\ the\ key\ from\ the\ location\ of\ the\ encrypted\ letter\ \u2018e\u2019,\ \r\n\r\n\ @param\ s\ encrypted\ message\r\n\ @return\ key\ for\ encryption\r\n
+comment6.params=encrypted
+comment6.target=java.lang.String\ breakCaesarCipherTwo(java.lang.String)
+comment6.text=\r\n\ decrypts\ an\ encrypted\ message\ using\ two\ keys\r\n\r\n\ @param\ encrypted\ message\r\n\ @return\ decrypted\ message\r\n
+numComments=7

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ simpleTests()
+comment0.text=\r\n\ Method\ simpleTests\r\n\r\n
+comment1.params=encrypted
+comment1.target=int[]\ countLetters(java.lang.String)
+comment1.text=\r\n\ counts\ the\ occurances\ of\ each\ alphabet\ character\ in\ an\ encrypted\ message\r\n\r\n\ @param\ encrypted\ message\r\n\ @return\ array\ of\ character\ counts\r\n
+comment2.params=counts
+comment2.target=int\ maxIndex(int[])
+comment2.text=\r\n\ returns\ the\ index\ of\ highest\ occuring\ letter\r\n\r\n\ @param\ counts\ array\ of\ character\ counts.\r\n\ @return\ index\ of\ character\ with\ highest\ occurence.\r\n
+comment3.params=encrypted
+comment3.target=java.lang.String\ breakCaesarCipher(java.lang.String)
+comment3.text=\r\n\ decrypts\ an\ encrypted\ message\r\n\r\n\ @param\ encrypted\ message\r\n\ @return\ decrypted\ message\r\n
+numComments=4
