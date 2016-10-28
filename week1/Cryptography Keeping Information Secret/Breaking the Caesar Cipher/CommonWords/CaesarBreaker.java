@@ -40,20 +40,28 @@ public class CaesarBreaker {
         
         String m;
         
-        m = "CFOPQ IBDFLK XQQXZH BXPQ CIXKH!BBBBBB";//"FIRST LEGION ATTACK EAST FLANK!"
-        m = decrypt(m);
+//         m = "CFOPQ IBDFLK XQQXZH BXPQ CIXKH!BBBBBB";//"FIRST LEGION ATTACK EAST FLANK!"
+//         m = decrypt(m);
+//         
+//         System.out.println(m);
+//         
+//           //"At noon be in the conference room with your hat on for a surprise party. YELL LOUD!";
+//         m = "Pi cddc qt xc iwt rdcutgtcrt gddb lxiw ndjg wpi dc udg p hjgegxht epgin. NTAA ADJS!ttttt";
+//         m = decrypt(m);
+//         
+//         System.out.println(m);
         
-        System.out.println(m);
+//         m = "Akag tjw Xibhr awoa aoee xakex znxag xwko";
+//         m = decryptTwoKeys(m);
+//         System.out.println(m);
+
+
+//         m = "Aal uttx hm aal Qtct Fhljha pl Wbdl. Pvxvxlx!";  //The name of the Java Mascot is Duke. Woeoeee!
+//         m = decryptTwoKeys(m);
+//         System.out.println(m);
         
-          //"At noon be in the conference room with your hat on for a surprise party. YELL LOUD!";
-        m = "Pi cddc qt xc iwt rdcutgtcrt gddb lxiw ndjg wpi dc udg p hjgegxht epgin. NTAA ADJS!ttttt";
-        m = decrypt(m);
         
-        System.out.println(m);
         
-        m = "Akag tjw Xibhr awoa aoee xakex znxag xwko";
-        m = decryptTwoKeys(m);
-        System.out.println(m);
         FileResource resource = new FileResource();
         
         m = decryptTwoKeys(resource.asString());

@@ -15,27 +15,51 @@ public class TestCaesarCipher {
      */
     public void simpleTests(){
         
-        // This method should read in a file as a String
-        FileResource fr = new FileResource();
-        String message = fr.asString();
-        
-        // create a CaesarCipher object with key 18,
-        CaesarCipher cc = new CaesarCipher(18);
-        
-        //encrypt the String read in using the CaesarCipher object,
-        String m = cc.encrypt(message);
-        
-        //print the encrypted String,
+//         // This method should read in a file as a String
+//         FileResource fr = new FileResource();
+//         String message = fr.asString();
+//         
+//         // create a CaesarCipher object with key 18,
+//         CaesarCipher cc = new CaesarCipher(18);
+//         
+//         //encrypt the String read in using the CaesarCipher object,
+//         String m = cc.encrypt(message);
+//         
+//         //print the encrypted String,
+//         System.out.println(m);
+//         
+//         
+//         //and decrypt the encrypted String using the decrypt method.
+//         m = cc.decrypt(message);
+//         System.out.println(m);
+//         
+//         
+//         m = breakCaesarCipher(message);   
+//         System.out.println(m);
+
+
+//         String m = "Can you imagine life WITHOUT the internet AND computers in your pocket?"; 
+//  
+//         CaesarCipherTwo cc = new CaesarCipherTwo(21,8); //Xii twp duvodvz gqam EDBCWPB bcm qibzzimo VVY xwhxpbzzn dv gjcm kwxszb?
+//         m = cc.encryptTwoKeys(m);
+//         System.out.println(m);
+
+
+
+        String m = "Hfs cpwewloj loks cd Hoto kyg Cyy."; 
+ 
+        CaesarCipherTwo cc = new CaesarCipherTwo(14,24); //The original name of Java was Oak.
+        m = cc.decryptTwoKeys(m);
         System.out.println(m);
         
         
-        //and decrypt the encrypted String using the decrypt method.
-        m = cc.decrypt(message);
-        System.out.println(m);
         
         
-        m = breakCaesarCipher(message);   
-        System.out.println(m);
+//         CaesarCipher cc = new CaesarCipher(15); //Rpc ndj xbpvxct axut LXIWDJI iwt xcitgcti PCS rdbejitgh xc ndjg edrzti?
+//         m = cc.encrypt(m);
+//         System.out.println(m);
+        
+        
         
         
     }

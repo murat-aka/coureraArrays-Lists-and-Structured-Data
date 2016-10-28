@@ -33,6 +33,7 @@ public class WordLengths {
 			     
 			     word = word.substring(1, n);
 			     n = word.length();
+			     if(n==0)continue;
 			 }
 			//System.out.println(word);
 			b = Character.isLetter(last);
@@ -41,6 +42,7 @@ public class WordLengths {
 			 }else{
 			     word = word.substring(0,n-1);
 			     n = word.length();
+			     if(n==0)continue;
 			 }
 			//System.out.println(word);
 			
@@ -63,7 +65,7 @@ public class WordLengths {
         
         FileResource resource = new FileResource();
         
-        int[] counts = new int[30];
+        int[] counts = new int[31];
         
         counts = countWordLength(resource,counts);
         
