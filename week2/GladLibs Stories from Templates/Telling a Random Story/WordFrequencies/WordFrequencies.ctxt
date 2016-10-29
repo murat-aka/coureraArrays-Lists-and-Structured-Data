@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=WordFrequencies()
+comment0.text=\r\n\ WordFrequencies\ Constructor\r\n\r\n
+comment1.params=
+comment1.target=void\ findUnique()
+comment1.text=\r\n\ finds\ unique\ words\ in\ a\ file\ and\ their\ frequencies.\r\n
+comment2.params=
+comment2.target=void\ tester()
+comment2.text=\r\n\ tester\ method\ to\ test\ if\ the\ program\ works\r\n\r\n
+comment3.params=
+comment3.target=int\ findMax()
+comment3.text=\r\n\ finds\ the\ index\ of\ the\ maximum\ occured\ word.\r\n\r\n\ @return\ index\ \r\n
+numComments=4
