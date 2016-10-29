@@ -43,3 +43,6 @@ After completing this course, you will be able to:
    2. [OOP-Caesar-Cipher](https://goo.gl/sYYaHw)
       
 ##### Week2: GladLibs- Stories from Templates
+
+   1. [Telling a Random Story](https://goo.gl/chFzJR)
+
