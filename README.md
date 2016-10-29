@@ -34,3 +34,12 @@ After completing this course, you will be able to:
     4. Store and manipulate data in an array or ArrayList;
     5. Combine multiple classes to solve larger problems;
     6. Use iterables and collections (including maps) in Java.
+    
+
+### Docs URLs
+##### Week1: Cryptography- Keeping Information Secret
+
+   1. [Implementing-the-Caesar-Cipher](https://goo.gl/n7b5It)
+   2. [OOP-Caesar-Cipher](https://goo.gl/sYYaHw)
+      
+##### Week2: GladLibs- Stories from Templates
