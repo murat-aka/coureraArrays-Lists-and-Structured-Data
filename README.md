@@ -45,4 +45,5 @@ After completing this course, you will be able to:
 ##### Week2: GladLibs- Stories from Templates
 
    1. [Telling a Random Story](https://goo.gl/chFzJR)
+   2. [Telling a Random Story-Characters In Play](https://goo.gl/fRDSwc)
 
