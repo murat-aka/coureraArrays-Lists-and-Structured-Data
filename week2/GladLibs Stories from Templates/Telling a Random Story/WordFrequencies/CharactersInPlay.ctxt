@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CharactersInPlay()
+comment0.text=\r\n\ \r\n\ initialises\ the\ arraylists\ to\ be\ used.\r\n
+comment1.params=person
+comment1.target=void\ update(java.lang.String)
+comment1.text=\r\n\ updates\ the\ character\u2019s\ name\ if\ it\ is\ not\ already\ there,\r\n\ and\ counting\ this\ line\ as\ one\ speaking\ part\ for\ this\ person\r\n\ \ \r\n\ @param\ person\ the\ input\ line\ to\ be\ the\ persons\ name.\r\n
+comment2.params=
+comment2.target=void\ findAllCharacters()
+comment2.text=\r\n\ opens\ a\ file,\ and\ reads\ the\ file\ line-by-line.\r\n\ For\ each\ line,\ if\ there\ is\ a\ period\ on\ the\ line,\r\n\ extract\ the\ possible\ name\ of\ the\ speaking\ part\r\n\r\n
+comment3.params=
+comment3.target=void\ tester()
+comment3.text=\r\n\ finds\ out\ if\ the\ program\ works\r\n\r\n
+comment4.params=num1\ num2
+comment4.target=void\ charactersWithNumParts(int,\ int)
+comment4.text=\r\n\ determine\ character\ names\ from\ their\ counts.\r\n\r\n\ @param\ num1\ count\ greater\ than\ this\ number\r\n\ @param\ num2\ count\ less\ than\ this\ number\r\n
+numComments=5

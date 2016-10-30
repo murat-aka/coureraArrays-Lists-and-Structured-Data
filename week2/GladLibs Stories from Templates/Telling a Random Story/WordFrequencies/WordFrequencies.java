@@ -63,6 +63,8 @@ public class WordFrequencies
         }
         
         System.out.println("max word/freq: "+myWords.get(index)+" "+myFreqs.get(index));
+        
+
     }
     
     
